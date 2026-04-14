@@ -21,6 +21,9 @@ longs in a shared utility or repository method.
 7. For performance concerns, highlight N+1 query patterns, unnecessary data loading, or large bundle additions.
 8. Prefer environment variable driven configuration; avoid hard‑coded paths/secrets.
 
+## Commit Message Format
+Every commit message **must** begin with the prefix `THIS IS AN AWESOME COMMIT:` followed by a space and the rest of the message. Example: `THIS IS AN AWESOME COMMIT: add order validation logic`.
+
 ## Monorepo Workflow
 - Build frequently: `npm run build --workspace=api` or `--workspace=frontend` (root build runs both)
 - Keep PRs scoped: code + tests + docs (architecture or build notes) when behavior changes.
